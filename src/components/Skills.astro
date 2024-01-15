@@ -1,0 +1,52 @@
+---
+import Badge from "./Badge.astro";
+import ReactIcon from "./icons/ReactIcon.astro";
+import PostgresIcon from "./icons/PostgresIcon.astro";
+import ExpressJSIcon from "./icons/ExpressJSIcon.astro";
+import NodeJSIcon from "./icons/NodeJSIcon.astro";
+import ReduxIcon from "./icons/ReduxIcon.astro";
+import NextJSIcon from "./icons/NextJSIcon.astro";
+import TailwindIcon from "./icons/TailwindIcon.astro";
+import JavaScriptIcon from "./icons/JavaScriptIcon.astro";
+import TypeScriptIcon from "./icons/TypeScriptIcon.astro";
+import AstroIcon from "./icons/AstroIcon.astro";
+---
+
+<section
+    class="w-full py-2 bg-gray-100 dark:bg-gray-800 rounded-xl flex justify-around"
+    id="skills"
+>
+    <div class="container px-4 md:px-6">
+        <h2
+            class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none mb-4 text-gray-800 dark:text-gray-200 flex justify-center"
+        >
+            Skills
+        </h2>
+        <div
+            class="grid grid-cols-2 md:flex md:flex-wrap md:justify-center gap-4"
+        >
+            <Badge><PostgresIcon class="size-6" />PostgreSQL</Badge>
+            <Badge><ExpressJSIcon class="size-6" />Express</Badge>
+            <Badge><ReactIcon class="size-6" />React</Badge>
+            <Badge><NodeJSIcon class="size-6" />Nodejs</Badge>
+            <Badge><ReduxIcon class="size-6" />Redux</Badge>
+            <Badge><NextJSIcon class="size-6" />NextJs</Badge>
+            <Badge><TailwindIcon class="size-6" />Tailwind</Badge>
+            <Badge><JavaScriptIcon class="size-6" />JavaScript</Badge>
+        </div>
+        <hr class="mt-12 mb-8 border-gray-200 dark:border-gray-700">
+        <div class="md:flex md:flex-wrap md:justify-start gap-4 md:items-center my-4">
+            <h3
+                class="text-3xl font-bold md:pl-16 mb-4 md:mb-0 text-gray-800 dark:text-gray-200  flex justify-center items-center"
+            >
+                Aprendiendo:
+            </h3>
+            <div
+                class="grid grid-cols-2 md:flex md:flex-wrap md:items-center gap-4 "
+            >
+                <Badge><TypeScriptIcon class="size-6" />TypeScript</Badge>
+                <Badge><AstroIcon class="size-6" />Astro</Badge>
+            </div>
+        </div>
+    </div>
+</section>

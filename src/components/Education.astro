@@ -1,0 +1,71 @@
+---
+import EducationItem from "./EducationItem.astro";
+const EDUCATION = [
+    {
+        date: "Junio 2023 - Octubre 2023",
+        title: "FULL STACK WEB DEVELOPMENT",
+        university: "Soy Henry Bootcamp",
+    },
+    {
+        date: "Mayo 2022 - Diciembre 2022)",
+        title: "DIPLOMADO DE PROGRAMACIÓN CON ÉNFASIS EN APLICACIÓN WEB",
+        university: "Universidad del Norte",
+    },
+    {
+        date: "Noviembre 2020 - Febrero 2022",
+        title: "TÉCNICO EN DESARROLLO DE SOFTWARE",
+        university: "Sena",
+    },
+];
+
+const WORK = [
+    {
+        date: "Septiembre 2023 - Enero 2024",
+        title: "Desarrollador Analista Junior",
+        university: "Botero S.A.S",
+    },
+    {
+        date: "Agosto 2023 - Octubre 2023",
+        title: "Teaching Assistant",
+        university: "Soy Henry Bootcamp",
+    },
+];
+---
+
+<section
+    class="w-full py-2 bg-gray-100 dark:bg-gray-800 rounded-xl flex  justify-around"
+    id="education"
+>
+    <div class="flex flex-col items-center md:block">
+        <h2
+            class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none flex flex-col justify-center mb-12"
+        >
+            Estudios
+        </h2>
+        <ol class="relative border-s border-gray-200 dark:border-gray-700 ml-3">
+            {
+                EDUCATION.map((experiencie) => (
+                    <li class="mb-10 ms-4">
+                        <EducationItem {...experiencie} />
+                    </li>
+                ))
+            }
+        </ol>
+    </div>
+    <div class="hidden md:block flex-col">
+        <h2
+            class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none flex flex-col justify-center mb-12"
+        >
+            Trabajo
+        </h2>
+        <ol class="relative border-s border-gray-200 dark:border-gray-700 ml-3">
+            {
+                WORK.map((work) => (
+                    <li class="mb-10 ms-4">
+                        <EducationItem {...work} />
+                    </li>
+                ))
+            }
+        </ol>
+    </div>
+</section>

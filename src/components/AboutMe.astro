@@ -1,0 +1,39 @@
+---
+import GitHubIcon from "./icons/GitHub.astro";
+import LinkedInIcon from "./icons/LinkedIn.astro";
+import ResumeIcon from "./icons/Resume.astro";
+import SocialLinks from './SocialLinks.astro'
+---
+
+<section class="w-full py-12 md:py-24 lg:py-32 flex flex-col justify-center items-center " id="about">
+    
+    <div class="container px-4 md:px-6  flex flex-col md:flex-row items-center justify-center ">
+        <img
+            class="size-48 rounded-full"
+            src="../../assest/logoCurvo.svg"
+            alt="Perfil"
+        />
+        <p class="mx-auto md:mr-36 text-lg md:text-2xl text-gray-600 dark:text-gray-400 mt-6 md:mt-0 md:ml-8 ">
+            Soy un <strong class="text-black dark:text-white">desarrollador web Full Stack enfocado en el FrontEnd</strong >, estoy aquí para dar vida a ideas y <strong class="text-black dark:text-white">crear experiencias digitales que dejen huella</strong>.
+        </p>
+        
+    </div>
+    <div class="flex gap-x-4 pt-6 items-center justify-center">
+        <SocialLinks href="https://www.linkedin.com/in/dan-agud/">
+            <LinkedInIcon class="size-6" />
+            LinkedIn
+        </SocialLinks>
+        <SocialLinks href="https://github.com/daniel-agudelo21">
+            <GitHubIcon class="size-6" />
+            GitHub
+        </SocialLinks>
+        <SocialLinks class="md:hidden" href="/assest/CV_Daniel_Agudelo.pdf">
+            <ResumeIcon class="size-8" />
+            CV
+        </SocialLinks>
+        <SocialLinks class="hidden md:flex" href="/assest/CV_Daniel_Agudelo.pdf">
+            <ResumeIcon class="size-8" />
+            Hoja de vida
+        </SocialLinks>
+     </div>
+</section>
