@@ -20,7 +20,7 @@ const { title, description } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="bg-[#FCF8EC] dark:bg-[#1A051A]">
 		<Header/>
 		<slot />
 		<Footer/>
@@ -37,6 +37,7 @@ const { title, description } = Astro.props;
 		
 		
 	}
+	
 	body {
 		
 	}
